@@ -1,0 +1,25 @@
+name: SimplePluginManagement
+main: simplepluginmanagement\SimplePluginManagement
+version: 1.0.0
+api: [2.0.0, 2.1.0, 2.2.0, 2.3.0]
+author: randy128gamer, xXSuperFrostyXx
+description: A plugin that allows you to manage your plugins.
+
+commands:
+    loadplugin:
+        description: Loads the given plugin file name.
+    enableplugin:
+        description: Enables the given plugin name.
+    disableplugin:
+        description: Disables the given plugin name.
+
+permissions:
+    simplepluginmanager.command.loadplugin:
+        description: Allows the user to load the given plugin file name.
+        default: op
+    simplepluginmanager.command.enableplugin:
+        description: Allows the user to enable the given plugin name.
+        default: op
+    simplepluginmanager.command.disableplugin:
+        description: Allows the user to disable the given plugin name.
+        default: op
